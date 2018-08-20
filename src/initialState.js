@@ -1,28 +1,28 @@
 export default {
-    entitities: {
-        categories: {
-            data: [],
-            req: {
-                loading: false,
-                status: '',
-                message: ''
-            }
-        },
-        categories: {
-            data: [],
-            req: {
-                loading: false,
-                status: '',
-                message: ''
-            }
-        },
-        random: {
-            data: [],
-            req: {
-                loading: false,
-                status: '',
-                message: ''
-            }
-        }
-    }
-}
+  entitities: {
+    categories: {
+      data: [],
+      request: {
+        loading: false,
+        status: '',
+        message: '',
+      },
+    },
+    category: {
+      data: [],
+      request: {
+        loading: false,
+        status: '',
+        message: '',
+      },
+    },
+    random: {
+      data: [],
+      request: {
+        loading: false,
+        status: '',
+        message: '',
+      },
+    },
+  },
+};

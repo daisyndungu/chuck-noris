@@ -1,9 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import {BASE_URL} from './config/config';
+import 'antd/dist/antd.css';
+import { BASE_URL } from './config/config';
 import Home from './components/Home';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 axios.defaults.baseURL = BASE_URL;
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <Home />
+  </Provider>,
+  document.getElementById('root'),
+);
