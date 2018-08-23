@@ -7,17 +7,21 @@ class Category extends Component {
 
   render() {
     const {joke, visible, closeModal, category, loading} =this.props;
+    const upper = category.charAt(0).toUpperCase() + category.substr(1);
     return (
       <div>
         <Modal
-          title={`Random ${category} joke`}
+          title={upper}
           visible={visible}
           onCancel={closeModal}
           footer={null}
-        > { loading === true ? (
+        > <p>Random joke:</p>
+          { loading === true ? (
             <Spin size="large" />
           ):
-            <p>{joke}</p>
+            <div>
+              <p>{joke}</p>
+            </div>
           }
           
         </Modal>
