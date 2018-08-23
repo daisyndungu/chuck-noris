@@ -3,25 +3,19 @@ import { Modal } from 'antd';
 import { Spin } from 'antd';
 
 
-
 class Category extends Component {
-  
-  
-
 
   render() {
     const {joke, visible, closeModal, category, loading} =this.props;
-    console.log(loading);
-    
-
     return (
       <div>
         <Modal
           title={`Random ${category} joke`}
           visible={visible}
           onCancel={closeModal}
+          footer={null}
         > { loading === true ? (
-            <Spin />
+            <Spin size="large" />
           ):
             <p>{joke}</p>
           }

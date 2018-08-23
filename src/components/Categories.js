@@ -26,9 +26,6 @@ class Categories extends Component {
 
   render() {
     const {categories, joke, loading} = this.props;
-    console.log(loading);
-        
-    
     return (
       <div>
         <List 
