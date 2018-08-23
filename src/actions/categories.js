@@ -4,6 +4,7 @@ import { FETCH_CATEGORIES_REQUEST, FETCH_CATEGORIES_SUCCESS, FETCH_CATEGORIES_FA
 
 export const fetchCategoriesRequest = () => ({
   type: FETCH_CATEGORIES_REQUEST,
+  loading: true
 });
 // succesfully fetch categories
 export function fetchCategoriesSuccess(categories) {

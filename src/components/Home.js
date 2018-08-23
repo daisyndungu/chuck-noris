@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu,} from 'antd';
 import { fetchCategoriesReq } from '../api/categories';
 import Categories from './Categories';
 
-
 class Home extends Component {
+    state = {
+        category: '',
+        visible: false
+    }
   componentDidMount() {
     this.props.fetchCategoriesReq();
   }
 
- loadCategory = () => {
-    console.log('load');
-    
-  }
   render() {
-    const { Header, Content, Footer } = Layout;
+    const { Header, Content } = Layout;
     const {categories} =this.props;      
     return(
       <Layout>

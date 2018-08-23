@@ -2,14 +2,15 @@ import { FETCH_CATEGORY_REQUEST, FETCH_CATEGORY_SUCCESS, FETCH_CATEGORY_FAILURE 
 
 // Fetch categories request
 
-export const fetchCategoriesRequest = () => ({
+export const fetchCategoryRequest = () => ({
   type: FETCH_CATEGORY_REQUEST,
 });
 // succesfully fetch categories
-export const  fetchCategorySuccess = (categories) => {
+export const  fetchCategorySuccess = (category) => {
+  
   return {
     type: FETCH_CATEGORY_SUCCESS,
-    categories,
+    category,
     message: 'Category fetched successfully',
     status: 'success',
   };

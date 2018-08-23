@@ -15,11 +15,13 @@ const categoryReducer = (
       request: {
         ...state.request,
         loading: true,
+        status: '',
+        message: ''
       },
     });
   case FETCH_CATEGORY_SUCCESS:
     return Object.assign({}, state, {
-      data: action.categories,
+      data: action.category.value,
       request: {
         ...state.request,
         loading: false,

@@ -3,15 +3,15 @@ export default {
     categories: {
       data: [],
       request: {
-        loading: false,
+        loading: true,
         status: '',
         message: '',
       },
     },
     category: {
-      data: [],
+      data: '',
       request: {
-        loading: false,
+        loading: true,
         status: '',
         message: '',
       },
@@ -19,7 +19,7 @@ export default {
     random: {
       data: [],
       request: {
-        loading: false,
+        loading: true,
         status: '',
         message: '',
       },
